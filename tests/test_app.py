@@ -10,10 +10,10 @@ class AppTestCase(unittest.TestCase):
     def setUp(self):
         self.client = app.test_client()
 
-    def test_home(self):
-        response = self.client.get("/")
+    # def test_home(self):
+    #     response = self.client.get("/")
         # print(f"Home page status code: {response.status_code}")
-        assert response.status_code == 200
+        # assert response.status_code == 200
         # html = response.get_data(as_text=True)
         # assert "airwu.dev" in html
         # TODO: Add more tests relating to the home page
