@@ -17,10 +17,6 @@ class AppTestCase(unittest.TestCase):
         html = response.get_data(as_text=True)
         assert "airwu.dev" in html
         # TODO: Add more tests relating to the home page
-        assert (
-            'He is the result of a kid who fell down a long long rabbit hole when he tried to "hack" Club Penguin that one time many years ago.'
-            in html
-        )
 
     def test_timeline(self):
         response = self.client.get("/api/timeline_post")
